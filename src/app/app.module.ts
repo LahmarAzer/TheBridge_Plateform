@@ -17,6 +17,7 @@ import { TopHeaderComponent } from './BackOffice/public/top-header/top-header.co
 import { ListCoursesComponent } from './FrontOffice/list-courses/list-courses.component';
 import { ContactUSComponent } from './FrontOffice/contact-us/contact-us.component';
 import { AddCourseComponent } from './BackOffice/add-course/add-course.component';
+import { UpdateCourseComponent } from './BackOffice/update-course/update-course.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { AddCourseComponent } from './BackOffice/add-course/add-course.component
         ListCoursesComponent,
         ContactUSComponent,
         AddCourseComponent,
+        UpdateCourseComponent,
   ],
   imports: [
     BrowserModule,

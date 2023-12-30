@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Course } from 'src/app/Model/Course';
 import { CourseServiceService } from 'src/app/Services/course-service.service';
+import { Course } from 'src/app/Model/Course';
 
 @Component({
   selector: 'app-list-courses',
@@ -14,22 +14,17 @@ export class ListCoursesComponent implements OnInit {
 
   ngOnInit(): void {
     this.courseService.getAllCourses().subscribe(
-      (courses) => {
-        this.courses = courses;
+      (data) => {
+        this.courses = data;
       },
       (error) => {
-        console.error('Error fetching courses', error);
+        console.error('Failed to get courses', error);
       }
     );
   }
 
-
   getImageFileName(path: string): string {
-    // Séparez le chemin en utilisant le séparateur de dossier '/'
     const pathParts = path.split('/');
-    // Récupérez le dernier élément du tableau, qui est le nom de fichier
-    const fileName = pathParts[pathParts.length - 1];
-    console.log('Chemin de l\'image :', fileName);
-    return fileName;
+    return pathParts[pathParts.length - 1];
   }
 }
