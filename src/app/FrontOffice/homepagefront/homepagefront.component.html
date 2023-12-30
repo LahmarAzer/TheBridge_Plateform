@@ -18,83 +18,54 @@
     </div>
     <!-- Loader end-->
 
+    
     <div class="page-wrapper">
-   <app-header></app-header>
+        <app-header></app-header>
         <div class="page-content">
-          
             <main class="page-main">
-                <div class="uk-grid" data-uk-grid>
-                    <div class="uk-width-2-3@l uk-width-3-3@m uk-width-3-3@s">
-                        <div class="js-recommend">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="recommend-slide">
-                                            <div class="tour-slide__box">
-                                                <a href=""><img src="assets/img/t1.jpg" alt="banner"></a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="recommend-slide">
-                                            <div class="tour-slide__box">
-                                                <h3 class="uk-text-lead">"Bizmatch: Où le B2B se transforme en opportunités d'affaires inégalées." </h3>
-                       
-                                                <a href=""><img src="assets/img/home3.png" alt="banner"></a>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="swiper-slide">
-                                        <div class="recommend-slide">
-                                            <div class="tour-slide__box">
-                                                <h3 class="uk-text-lead">"Rapprochez-vous, collaborez, triomphez: avec Bizmatch, le futur du B2B commence aujourd'hui." </h3>
-                       
-                                                <a href=""><img src="assets/img/home2.png" alt="banner"></a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <div class="swiper-slide">
-                                        <div class="recommend-slide">
-                                            <div class="tour-slide__box">
-                                                <h3 class="uk-text-lead">"Fusionnez visions et valeurs: Bizmatch, la révolution B2B est ici."</h3>
-                       
-                                            
-                                                <a href=""><img src="assets/img/home1.png" alt="banner"></a>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
+                <!-- Swiper Slider Fullpage -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('assets/img/bridge3.jpg');">
+                            <div class="overlay">
+                                <div class="text-container">
+                                    <h2>Improve your skills on your own</h2>
+                                    <h2>To prepare for a better future</h2>
+                                    <a href="#" class="register-button">Register Now</a>
                                 </div>
-                                <div class="swipper-nav">
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
-                                </div>
-                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                    </div>
+                    </div>        
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                       
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
 
 
+               
+                <br>
+                <br>
+                
+                <div class="courses-section">
+                    <h2>Discover Our Courses :</h2>
+                    <a href="#" class="View-button">View More</a>
+                </div>
+                
+
+                <br>
+                <br>
                  <div>
                <app-list-courses></app-list-courses>
                 </div>
 
                 <br>
                 <br>
+
+
+<!-- Contact Section -->
+
+<app-contact-us></app-contact-us>
+
                 <br>
                 <br>
                 <br>
@@ -105,4 +76,4 @@
        
     </div>
    <app-modals></app-modals>
-</body>
+</body> 

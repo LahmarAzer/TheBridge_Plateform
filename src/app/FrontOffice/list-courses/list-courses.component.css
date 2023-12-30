@@ -1,0 +1,62 @@
+.container {
+    max-width: 1200px; /* or your desired max width */
+    margin: auto; /* This centers the container */
+    padding: 0 20px; /* Add some padding */
+}
+
+.courses-section {
+    padding: 40px 0; /* Add padding above and below the course section */
+    background: #f7f7f7; /* Example background color */
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal size */
+    gap: 20px; /* Space between cards */
+}
+
+.course-card {
+    background: #fff; /* Card background color */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 10px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures the content fits within the rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Adds a subtle shadow */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.course-card:hover {
+    transform: translateY(-5px); /* Slightly raise the card on hover */
+}
+
+.course-card img {
+    width: 100%; /* Ensure the image covers the width of the card */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.course-card h3 {
+    font-size: 1.2em; /* Title font size */
+    color: #333; /* Title text color */
+    padding: 10px 15px; /* Padding around the title */
+}
+
+.course-card p {
+    font-size: 1em;
+    color: #ff0000; /* This sets the text color to red */
+    padding: 0 15px 15px; /* Padding around the price */
+    margin: 0; /* Remove default margins */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}

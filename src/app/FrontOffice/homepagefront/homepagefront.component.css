@@ -1,0 +1,212 @@
+
+.swiper {
+    height: 80vh; /* Adjust based on your layout */
+    width: 100%;
+    background-attachment: fixed; /* Optional: for fixed background images */
+}
+
+
+/* Semi-transparent overlay styles */
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:     rgba(255, 255, 255, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text and button styles within the overlay */
+.overlay-text {
+    text-align: center;
+    color: white;
+}
+
+.overlay-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.overlay-text p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.register-button {
+    padding: 10px 20px;
+    background-color: #e60073; /* Updated color */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Fully rounded corners */
+    font-size: 1em;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #e6007356; /* Darker shade for hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* ... existing responsive styles ... */
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Remove rounded corners from the text container */
+.text-container {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Clear white background */
+    border-radius: 0; /* No rounded corners */
+    display: inline-block;
+}
+
+.text-container h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.register-button {
+    padding: 10px 20px;
+    background-color: #e6007356; /* Pink color for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1em;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.8s;
+}
+
+.courses-section {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+.courses-section h2 {
+    margin-right: 700px; /* Pushes the h2 to the left and button to the right */
+}
+
+/* Styling for the button */
+.View-button {
+    margin-left: 20px; /* Add space between the h2 and the button */
+
+    padding: 10px 20px;
+    background-color: #e6007356; /* Semi-transparent pink color for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.8s;
+}
+
+
+
+/* Contact Section Styles */
+.contact-section {
+    background: #FFD700; /* Placeholder bright yellow color */
+    border-radius: 50px;
+    padding: 50px;
+    max-width: 700px;
+    margin: 40px auto; /* Centering the contact section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #333; /* Dark text color for the title */
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 80%; /* Adjust width as necessary */
+    padding: 15px;
+    margin-bottom: 15px; /* Spacing between fields */
+    border: none;
+    border-radius: 25px; /* Rounded borders */
+    font-size: 16px; /* Larger font size for readability */
+}
+
+.contact-section button {
+    background-color: #e6007356; /* Placeholder vibrant red color for the button */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px; /* Rounded button edges */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Optional: Makes the button text uppercase */
+}
+
+.contact-section button:hover {
+    background-color: #e6007356; /* Darker shade for hover effect */
+}
+
+
+
+  
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide the scrollbar */
+    height: 100%;
+}
+
+.page-wrapper {
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex: 1; /* Flex grow to take available space */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keep the background fixed during scroll */
+}
+
+

@@ -16,6 +16,7 @@ import { SidebarComponent } from './BackOffice/public/sidebar/sidebar.component'
 import { TopHeaderComponent } from './BackOffice/public/top-header/top-header.component';
 import { CoursesComponent } from './BackOffice/courses/courses.component';
 import { ListCoursesComponent } from './FrontOffice/list-courses/list-courses.component';
+import { ContactUSComponent } from './FrontOffice/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ListCoursesComponent } from './FrontOffice/list-courses/list-courses.co
     SidebarComponent,
         TopHeaderComponent,
         ListCoursesComponent,
+        ContactUSComponent,
   ],
   imports: [
     BrowserModule,
