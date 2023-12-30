@@ -1,15 +1,14 @@
 <body>
   <!--start wrapper-->
   <div class="wrapper">
-    <!-- Assuming <app-sidebar> and <app-top-header> are your components for sidebar and header -->
     <app-sidebar></app-sidebar>
     <app-top-header></app-top-header>
-  
+
     <!-- start page content wrapper-->
     <div class="page-content-wrapper">
       <!-- start page content-->
       <div class="page-content">
-  
+
         <!--start breadcrumb-->
         <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
           <div class="breadcrumb-title pe-3">Courses</div>
@@ -38,11 +37,17 @@
           </div>
         </div>
         <!--end breadcrumb-->
-  
+
         <!-- Card for Course Details -->
         <div class="card">
           <div class="card-body">
-            <h5 class="mb-0">Courses Details</h5>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h5 class="mb-0">Courses Details</h5>
+              <button class="btn" style="background-color: #8B0000;">
+                <a [routerLink]="['/addCourse']" class="text-white" style="text-decoration: none;">Add Course</a>
+              </button>
+            </div>
+
             <!-- Search form -->
             <form class="ms-auto position-relative my-3">
               <div class="position-absolute top-50 translate-middle-y search-icon px-3">
@@ -64,7 +69,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <!-- Use *ngFor to iterate over courses -->
                   <tr *ngFor="let course of courses; let i = index">
                     <td>{{ i + 1 }}</td>
                     <td>{{ course.title }}</td>
@@ -77,10 +81,6 @@
                         <a [routerLink]="['/viewCourse', course.id]" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View">
                           <i class="bi bi-eye-fill"></i>
                         </a>
-                        <a [routerLink]="['/addCourse']" class="text-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add Course">
-                          <i class="bi bi-plus-circle-fill"></i>
-                        </a>
-                        
                         <a [routerLink]="['/updateCourse', course.id]" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit">
                           <i class="bi bi-pencil-fill"></i>
                         </a>
@@ -99,10 +99,9 @@
       <!-- end page content-->
     </div>
     <!-- end page content wrapper-->
-  
+
     <!-- Other content goes here -->
-  
+
   </div>
   <!--end wrapper-->
-  </body>
-  
+</body>
