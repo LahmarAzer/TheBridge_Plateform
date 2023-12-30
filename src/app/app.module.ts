@@ -14,7 +14,6 @@ import { IonicModule } from '@ionic/angular';
 import { FooterComponent } from './FrontOffice/public/footer/footer.component';
 import { SidebarComponent } from './BackOffice/public/sidebar/sidebar.component';
 import { TopHeaderComponent } from './BackOffice/public/top-header/top-header.component';
-import { CoursesComponent } from './BackOffice/courses/courses.component';
 import { ListCoursesComponent } from './FrontOffice/list-courses/list-courses.component';
 import { ContactUSComponent } from './FrontOffice/contact-us/contact-us.component';
 

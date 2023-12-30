@@ -1,8 +1,8 @@
 
+
+/* Swiper container and slide styles */
 .swiper {
-    height: 80vh; /* Adjust based on your layout */
-    width: 100%;
-    background-attachment: fixed; /* Optional: for fixed background images */
+    height: 80vh; /* Full viewport height */
 }
 
 
