@@ -1,22 +1,58 @@
-<!-- add-course.component.html -->
-<div class="card">
-    <div class="card-body">
-      <h5 class="mb-0">Ajouter Course</h5>
-      <form (ngSubmit)="onSubmit(courseForm)" #courseForm="ngForm" enctype="multipart/form-data">
-        <div class="mb-3">
-          <label for="title" class="form-label">Titre</label>
-          <input type="text" class="form-control" id="title" name="title" [(ngModel)]="course.title" required>
+<body>
+    <!--start wrapper-->
+    <div class="wrapper">
+      <app-sidebar></app-sidebar>
+      <app-top-header></app-top-header>
+  
+      <!-- start page content wrapper-->
+      <div class="page-content-wrapper">
+        <!-- start page content-->
+        <div class="page-content">
+  
+          <!--start breadcrumb-->
+          <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+            <div class="ps-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 p-0 align-items-center">
+                  <li class="breadcrumb-item"><a href="javascript:;"><ion-icon name="home-outline"></ion-icon></a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Add Course</li>
+                </ol>
+              </nav>
+            </div>
+            <!-- Optionally, you can add buttons or other elements here -->
+          </div>
+          <!--end breadcrumb-->
+  
+          <!-- Card for Adding New Course -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="mb-0">Add New Course</h5>
+              <form (ngSubmit)="onSubmit(courseForm)" #courseForm="ngForm" enctype="multipart/form-data">
+                <div class="mb-3">
+                  <label for="title" class="form-label">Titre</label>
+                  <input type="text" class="form-control" id="title" name="title" [(ngModel)]="course.title" required>
+                </div>
+                <div class="mb-3">
+                  <label for="price" class="form-label">Prix</label>
+                  <input type="number" class="form-control" id="price" name="price" [(ngModel)]="course.price" required>
+                </div>
+                <div class="form-group">
+                  <label for="image" class="form-label">Image</label>
+                  <input type="file" id="image" name="image" class="form-control" (change)="onFileChange($event)" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+              </form>
+            </div>
+          </div>
+  
         </div>
-        <div class="mb-3">
-          <label for="price" class="form-label">Prix</label>
-          <input type="number" class="form-control" id="price" name="price" [(ngModel)]="course.price" required>
-        </div>
-        <div class="form-group">
-          <label for="image" class="form-label">Image</label>
-          <input type="file" id="image" name="image" class="form-control" (change)="onFileChange($event)" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Ajouter</button>
-      </form>
+        <!-- end page content-->
+      </div>
+      <!-- end page content wrapper-->
+  
+      <!-- Other content goes here -->
+  
     </div>
-  </div>
+    <!--end wrapper-->
+  </body>
   

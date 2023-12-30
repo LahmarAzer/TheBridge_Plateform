@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepagefrontComponent } from './FrontOffice/homepagefront/homepagefront.component';
 import { IndexComponent } from './BackOffice/index/index.component';
 import { AddCourseComponent } from './BackOffice/add-course/add-course.component';
+import { UpdateCourseComponent } from './BackOffice/update-course/update-course.component';
 const routes: Routes = [
    
         
@@ -18,7 +19,10 @@ const routes: Routes = [
           path:'addCourse',
           component:AddCourseComponent
         },
-
+        {
+          path:'updateCourse/:id',
+          component:UpdateCourseComponent
+        },
         {
         path: "",
         redirectTo: "/home",

@@ -21,6 +21,21 @@ export class CourseServiceService {
     return this.http.post<Course>(`${this.apiUrl}/addCourse`, formData);
   }
 
+  updateCourse(course: Course, file: File | null, id: number): Observable<Course> {
+    const formData: FormData = new FormData();
+    formData.append('title', course.title);
+    formData.append('price', course.price.toString());
+    if (file) {
+      formData.append('image', file, file.name);
+    }
+
+    return this.http.put<Course>(`${this.apiUrl}/updatecourse/${id}`, formData);
+  }
+
+  
+  getCourseById(id: number): Observable<Course> {
+    return this.http.get<Course>(`${this.apiUrl}/getCourse/${id}`);
+  }
 
   getAllCourses(): Observable<Course[]> {
     return this.http.get<Course[]>(`${this.apiUrl}/getAllCourses`);
