@@ -1,0 +1,44 @@
+.footer-container {
+    background-color: #2c3e50; /* Dark Blue */
+    color: #ecf0f1; /* Light Text Color */
+    padding: 40px; /* Adjusted padding for top and bottom */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px; /* Added padding to the sides */
+  }
+  
+.social-icons {
+    float: right;
+    padding-right: 20px; /* Adjust padding as needed */
+  }
+  
+  
+.logo-container {
+    margin-bottom: 10px; /* Ajustez l'espace entre le logo et le texte comme nécessaire */
+  }
+  
+  .footer-logo {
+    width: 100px; /* Ajustez la largeur comme nécessaire */
+    height: auto; /* Maintient le ratio d'aspect du logo */
+  }
+  
+  .social-icons a {
+    color: #000; /* Change to your preferred color */
+    font-size: 24px; /* Adjust size as needed */
+    transition: color 0.3s;
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+  
+  .social-icons a:hover {
+    color: #007bff; /* Change to your preferred hover color */
+  }
+  
