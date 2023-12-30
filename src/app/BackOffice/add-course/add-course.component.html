@@ -1,0 +1,22 @@
+<!-- add-course.component.html -->
+<div class="card">
+    <div class="card-body">
+      <h5 class="mb-0">Ajouter Course</h5>
+      <form (ngSubmit)="onSubmit(courseForm)" #courseForm="ngForm" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="title" class="form-label">Titre</label>
+          <input type="text" class="form-control" id="title" name="title" [(ngModel)]="course.title" required>
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Prix</label>
+          <input type="number" class="form-control" id="price" name="price" [(ngModel)]="course.price" required>
+        </div>
+        <div class="form-group">
+          <label for="image" class="form-label">Image</label>
+          <input type="file" id="image" name="image" class="form-control" (change)="onFileChange($event)" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+      </form>
+    </div>
+  </div>
+  
