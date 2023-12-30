@@ -27,21 +27,36 @@
           <div class="card">
             <div class="card-body">
               <h5 class="mb-0">Add New Course</h5>
-              <form (ngSubmit)="onSubmit(courseForm)" #courseForm="ngForm" enctype="multipart/form-data">
+              <br>
+              <!-- add-course.component.html -->
+            <form (ngSubmit)="onSubmit(courseForm)" #courseForm="ngForm" enctype="multipart/form-data">
+                <!-- ... -->
                 <div class="mb-3">
-                  <label for="title" class="form-label">Titre</label>
-                  <input type="text" class="form-control" id="title" name="title" [(ngModel)]="course.title" required>
+                <label for="title" class="form-label">Titre</label>
+                <input type="text" class="form-control" id="title" name="title" [(ngModel)]="course.title" #title="ngModel" required>
+                <div *ngIf="title.invalid && title.touched" class="text-danger">
+                    Title is required.
+                </div>
                 </div>
                 <div class="mb-3">
-                  <label for="price" class="form-label">Prix</label>
-                  <input type="number" class="form-control" id="price" name="price" [(ngModel)]="course.price" required>
+                <label for="price" class="form-label">Prix</label>
+                <input type="number" class="form-control" id="price" name="price" [(ngModel)]="course.price" #price="ngModel" required>
+                <div *ngIf="price.invalid && price.touched" class="text-danger">
+                    Price is required.
+                </div>
                 </div>
                 <div class="form-group">
-                  <label for="image" class="form-label">Image</label>
-                  <input type="file" id="image" name="image" class="form-control" (change)="onFileChange($event)" required>
+                <label for="image" class="form-label">Image</label>
+                <input type="file" id="image" name="image" class="form-control" (change)="onFileChange($event)" required>
+                <div *ngIf="!selectedFile && courseForm.submitted" class="text-danger">
+                    Image is required.
                 </div>
-                <button type="submit" class="btn btn-primary">Ajouter</button>
-              </form>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary" [disabled]="courseForm.invalid">Ajouter</button>
+            </form>
+  <!-- ... -->
+  
             </div>
           </div>
   
