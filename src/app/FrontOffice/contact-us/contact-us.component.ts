@@ -1,3 +1,4 @@
+// contact-us.component.ts
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class ContactUSComponent {
 
+  onSubmit(form: any) {
+    const { name, email, message } = form.value;
+    const subject = `Message from ${name}`;
+    const mailtoLink = `mailto:azer.alahmar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+    window.location.href = mailtoLink;
+  }
 }
