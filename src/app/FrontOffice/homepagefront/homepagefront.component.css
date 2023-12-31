@@ -1,8 +1,9 @@
 
 
-/* Swiper container and slide styles */
 .swiper {
-    height: 80vh; /* Full viewport height */
+    height: calc(100vh - 300px); /* Ajustez les 100px à la hauteur combinée de votre en-tête/pied de page */
+    width: 1400px;
+    overflow: hidden; /* Facultativement, masquez le dépassement si encore nécessaire */
 }
 
 
@@ -128,23 +129,8 @@
 }
 
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Hide the scrollbar */
-    height: 100%;
-}
 
-.page-wrapper {
-    min-height: 100vh; /* Full height of the viewport */
-    display: flex;
-    flex-direction: column;
-}
 
-.page-content {
-    flex: 1; /* Flex grow to take available space */
-    overflow-y: auto; /* Allow vertical scrolling */
-}
 
 
 .swiper-slide {
@@ -154,3 +140,23 @@ html, body {
 }
 
 
+.swiper-container {
+    width: 100vw;
+    height: calc(100vh - 300px);
+    /* Ajouter les autres styles de swiper-container ici... */
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Ajouter les autres styles de swiper-slide ici... */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* Ajouter les autres styles globaux ici... */
+}

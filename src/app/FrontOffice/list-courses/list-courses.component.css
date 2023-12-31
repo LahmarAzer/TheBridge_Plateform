@@ -54,3 +54,34 @@
         grid-template-columns: 1fr; /* 1 column on very small screens */
     }
 }
+
+.pagination-controls {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .pagination-controls button {
+    background-color: #f0f0f0; /* Couleur de fond */
+    border: 1px solid #ddd; /* Bordure */
+    padding: 5px 10px; /* Espacement interne */
+    margin: 0 5px; /* Espacement externe */
+    cursor: pointer; /* Curseur en forme de pointeur */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s, color 0.3s; /* Transition douce pour le survol */
+  }
+  
+  .pagination-controls button:hover {
+    background-color: #e9e9e9; /* Couleur de fond au survol */
+    color: #333; /* Couleur du texte au survol */
+  }
+  
+  .pagination-controls button:focus {
+    outline: none; /* Supprime le contour lors de la sélection */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1); /* Ombre portée pour la mise en évidence */
+  }
+  
+  .pagination-controls button.active {
+    background-color: #007bff; /* Couleur de fond pour la page active */
+    color: white; /* Couleur du texte pour la page active */
+  }
+  

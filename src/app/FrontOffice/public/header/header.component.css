@@ -1,0 +1,13 @@
+.page-header__logo_text {
+    display: flex; /* Permet un positionnement flexible des éléments enfants */
+    align-items: center; /* Centre verticalement le texte et l'image */
+    font-size: 1.5rem; /* Ajustez la taille de la police comme désiré */
+    color: #333; /* Couleur du texte */
+    /* Ajoutez d'autres styles de texte ici si nécessaire */
+}
+
+.page-header__logo_img {
+    height: 1.5em; /* La hauteur de l'image correspond à la taille de la police du texte */
+    margin-left: 0.4em; /* Espace entre "The" et l'image du logo */
+    margin-right: 0.1em; /* Espace entre l'image du logo et "ridge" */
+}

@@ -9,6 +9,9 @@ import { CourseServiceService } from 'src/app/Services/course-service.service';
 })
 export class ListCoursesComponent implements OnInit {
   courses: Course[] = [];
+  paginatedCourses: Course[] = [];
+  currentPage: number = 1;
+  itemsPerPage: number = 6;
 
   constructor(private courseService: CourseServiceService) {}
 
@@ -16,6 +19,7 @@ export class ListCoursesComponent implements OnInit {
     this.courseService.getAllCourses().subscribe(
       (courses) => {
         this.courses = courses;
+        this.paginateCourses(); // Initialise the paginatedCourses array
       },
       (error) => {
         console.error('Error fetching courses', error);
@@ -23,13 +27,25 @@ export class ListCoursesComponent implements OnInit {
     );
   }
 
-
   getImageFileName(path: string): string {
-    // Séparez le chemin en utilisant le séparateur de dossier '/'
     const pathParts = path.split('/');
-    // Récupérez le dernier élément du tableau, qui est le nom de fichier
     const fileName = pathParts[pathParts.length - 1];
-    console.log('Chemin de l\'image :', fileName);
     return fileName;
+  }
+
+  paginateCourses(): void {
+    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    this.paginatedCourses = this.courses.slice(startIndex, endIndex);
+  }
+
+  goToPage(pageNumber: number): void {
+    this.currentPage = pageNumber;
+    this.paginateCourses();
+  }
+
+  pageNumbers(): number[] {
+    const pageCount = Math.ceil(this.courses.length / this.itemsPerPage);
+    return Array(pageCount).fill(0).map((x, i) => i + 1);
   }
 }
