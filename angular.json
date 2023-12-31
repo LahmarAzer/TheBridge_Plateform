@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bizmatch": {
+    "TheBridge": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bizmatch",
+            "outputPath": "dist/TheBridge",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "bizmatch:build:production"
+              "browserTarget": "TheBridge:build:production"
             },
             "development": {
-              "browserTarget": "bizmatch:build:development"
+              "browserTarget": "TheBridge:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bizmatch:build"
+            "browserTarget": "TheBridge:build"
           }
         },
         "test": {
