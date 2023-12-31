@@ -15,25 +15,13 @@
           <div class="ps-3">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mb-0 p-0 align-items-center">
-                <li class="breadcrumb-item"><a href="javascript:;"><ion-icon name="home-outline"></ion-icon></a></li>
+                <li class="breadcrumb-item"><a href="javascript:;"></a></li>
                 <li class="breadcrumb-item active" aria-current="page">Courses List</li>
               </ol>
             </nav>
           </div>
           <div class="ms-auto">
-            <div class="btn-group">
-              <button type="button" class="btn btn-outline-primary">Settings</button>
-              <button type="button" class="btn btn-outline-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
-                <a class="dropdown-item" href="javascript:;">Action</a>
-                <a class="dropdown-item" href="javascript:;">Another action</a>
-                <a class="dropdown-item" href="javascript:;">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="javascript:;">Separated link</a>
-              </div>
-            </div>
+           
           </div>
         </div>
         <!--end breadcrumb-->
@@ -42,19 +30,11 @@
         <div class="card">
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-center mb-4">
-              <h5 class="mb-0">Courses Details</h5>
-              <button class="btn" style="background-color: #8B0000;">
-                <a [routerLink]="['/addCourse']" class="text-white" style="text-decoration: none;">Add Course</a>
+              <button class="btn" style="background-color: #c44976;">
+                <a [routerLink]="['/addCourse']" class="text-white" style="font-weight: normal;">Add Course</a>
               </button>
             </div>
 
-            <!-- Search form -->
-            <form class="ms-auto position-relative my-3">
-              <div class="position-absolute top-50 translate-middle-y search-icon px-3">
-                <ion-icon name="search-sharp"></ion-icon>
-              </div>
-              <input class="form-control ps-5" type="text" placeholder="search">
-            </form>
             
             <!-- Courses table -->
             <div class="table-responsive">

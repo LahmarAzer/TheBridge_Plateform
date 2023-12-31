@@ -7,10 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TopHeaderComponent {
 
-  logout() {
-    // Implement your logout logic here, like clearing localStorage and navigating to login page
-    localStorage.clear();
-    window.location.reload(); // or navigate to login page
-  }
+ 
 
 }
