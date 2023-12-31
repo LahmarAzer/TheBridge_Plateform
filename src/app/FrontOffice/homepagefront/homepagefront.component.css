@@ -37,7 +37,7 @@
 
 .register-button {
     padding: 10px 20px;
-    background-color: #e60073; /* Updated color */
+    background-color: #c44976; /* Updated color */
     color: white;
     text-decoration: none;
     border-radius: 50px; /* Fully rounded corners */
@@ -46,16 +46,12 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-weight: normal; /* Non-bold font weight */
+
 }
 
-.register-button:hover {
-    background-color: #e6007356; /* Darker shade for hover effect */
-}
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    /* ... existing responsive styles ... */
-}
+
 
 
 
@@ -92,11 +88,11 @@
 }
 
 .register-button {
-    padding: 10px 20px;
-    background-color: #e6007356; /* Pink color for the button */
+    padding: 12px 50px;
+    background-color: #c44976;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 1em;
     display: inline-block;
     border: none;
@@ -118,70 +114,18 @@
 .View-button {
     margin-left: 20px; /* Add space between the h2 and the button */
 
-    padding: 10px 20px;
-    background-color: #e6007356; /* Semi-transparent pink color for the button */
+    padding: 10px 30px;
+    background-color: #c44976; /* Semi-transparent pink color for the button */
     color: white;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 1em;
     border: none;
     cursor: pointer;
     transition: background-color 0.8s;
+    font-weight: normal; /* Non-bold font weight */
+
 }
-
-
-
-/* Contact Section Styles */
-.contact-section {
-    background: #FFD700; /* Placeholder bright yellow color */
-    border-radius: 50px;
-    padding: 50px;
-    max-width: 700px;
-    margin: 40px auto; /* Centering the contact section */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-    text-align: center;
-}
-
-.contact-section h2 {
-    color: #333; /* Dark text color for the title */
-    margin-bottom: 20px;
-}
-
-.contact-section form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-section input,
-.contact-section textarea {
-    width: 80%; /* Adjust width as necessary */
-    padding: 15px;
-    margin-bottom: 15px; /* Spacing between fields */
-    border: none;
-    border-radius: 25px; /* Rounded borders */
-    font-size: 16px; /* Larger font size for readability */
-}
-
-.contact-section button {
-    background-color: #e6007356; /* Placeholder vibrant red color for the button */
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 25px; /* Rounded button edges */
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase; /* Optional: Makes the button text uppercase */
-}
-
-.contact-section button:hover {
-    background-color: #e6007356; /* Darker shade for hover effect */
-}
-
-
-
-  
 
 
 html, body {

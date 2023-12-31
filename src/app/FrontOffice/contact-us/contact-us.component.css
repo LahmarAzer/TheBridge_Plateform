@@ -1,18 +1,18 @@
-
 /* Contact Section Styles */
 .contact-section {
-    background: #FFD700; /* Placeholder bright yellow color */
-    border-radius: 50px;
-    padding: 50px;
-    max-width: 700px;
-    margin: 40px auto; /* Centering the contact section */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    background: #eeaa4b; /* Adjusted to a soft pink color */
+    border-radius: 30px; /* Increased rounded corners */
+    padding: 20px 40px; /* Adjusted padding for a tighter fit */
+    max-width: 500px; /* Reduced maximum width */
+    margin: 20px auto; /* Centering the contact section with less margin */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtler shadow */
     text-align: center;
+    
 }
 
 .contact-section h2 {
-    color: #333; /* Dark text color for the title */
-    margin-bottom: 20px;
+    color: #333; /* Maintaining a dark text color for the title */
+    margin-bottom: 15px; /* Reduced bottom margin */
 }
 
 .contact-section form {
@@ -21,40 +21,50 @@
     align-items: center;
 }
 
+.contact-section .contact-label {
+    align-self: flex-start;
+    margin-left: 10%; /* Adjust based on the width of the form */
+    margin-bottom: 5px;
+    color: #333; /* Dark label color */
+    font-weight: bold;
+}
+
 .contact-section input,
 .contact-section textarea {
-    width: 80%; /* Adjust width as necessary */
-    padding: 15px;
-    margin-bottom: 15px; /* Spacing between fields */
-    border: none;
-    border-radius: 25px; /* Rounded borders */
-    font-size: 16px; /* Larger font size for readability */
+    width: 80%; /* Full width of the container */
+    padding: 10px; /* Reduced padding */
+    margin-bottom: 10px; /* Reduced spacing between fields */
+    border: 2px solid #FCCAC7; /* Thicker border color matching the background */
+    border-radius: 25px; /* Increased rounded borders */
+    font-size: 14px; /* Adjusted font size */
 }
 
 .contact-section button {
-    background-color: #e6007356; /* Placeholder vibrant red color for the button */
+    background-color: #c44976; /* A solid pink color for the button */
     color: white;
     border: none;
-    padding: 15px 30px;
-    border-radius: 25px; /* Rounded button edges */
-    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px; /* Increased rounded button edges */
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-transform: uppercase; /* Optional: Makes the button text uppercase */
+    margin-top: 10px; /* Space above the button */
 }
 
 .contact-section button:hover {
-    background-color: #e6007356; /* Darker shade for hover effect */
+    background-color: #b73e65; /* Darker shade for hover effect */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .contact-section {
-        padding: 30px;
-    }
-
     .contact-section input,
     .contact-section textarea {
         width: 90%; /* Full width on smaller screens */
+    }
+    
+    .contact-section .contact-label {
+        margin-left: 5%; /* Adjust based on the width of the form */
+
+        
     }
 }
