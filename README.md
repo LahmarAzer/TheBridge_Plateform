@@ -1,4 +1,4 @@
-# Bizmatch
+# The Bridge
 This project, "TheBridge", is built using Angular, a popular framework for building web applications.
 It was generated with Angular CLI version 15.2.6, ensuring a modern and efficient development setup.
 
